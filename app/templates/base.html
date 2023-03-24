@@ -12,8 +12,8 @@
 <body>
 <div>
     Microblog
-    <a href = "/index">MAIN</a>
-    <a href = "/login">Log In</a>
+    <a href = "{{ url_for('index') }}">MAIN</a>
+    <a href = "{{ url_for('login') }}">Log In</a>
 </div>
 <hr>
 {% with messages = get_flashed_messages() %}
